@@ -22,3 +22,5 @@ function printGrid () {
 }
 
 printGrid();
+
+// Continues to add boxes to first row instead of next row. Try classList.add('row' + j)?
