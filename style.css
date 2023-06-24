@@ -19,20 +19,26 @@
 
 .grid {
     display: flex;
-    height: 640px;
-    width: 640px;
+    height: 512px;
+    width: 512px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 12px; 
 }
 
-.controls {
+.box {
+    display: flex;
+    min-height: 32px;
+    min-width: 32px;
+}
+
+/* .controls {
     display: flex;
     height: 240px;
     width: 180px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .footer {
     padding: 12px;
