@@ -28,8 +28,8 @@
 
 .box {
     display: flex;
-    min-height: 32px;
-    min-width: 32px;
+    min-height: 30px;
+    min-width: 30px;
 }
 
 /* .controls {
