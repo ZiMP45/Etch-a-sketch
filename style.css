@@ -32,10 +32,14 @@
     flex: 1;
 }
 
-.box {
+.xDimension {
     display: flex;
-    min-height: 30px;
-    min-width: 30px;
+    width: 30px;
+}
+
+.yDimension {
+    display: flex;
+    height: 30px;
 }
 
 /* .controls {

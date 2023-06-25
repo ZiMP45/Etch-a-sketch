@@ -12,7 +12,8 @@ function createRows (i) {
     const grid = document.querySelector('.grid');
 
     const row = document.createElement('div');
-    row.classList.add('row' + i);
+    row.setAttribute('id', 'row' + i);
+    row.classList.add('yDimension');
     row.textContent = '';
 
     grid.appendChild(row);
@@ -20,10 +21,11 @@ function createRows (i) {
 
 function createColumns (i, j) {
 
-    const rows = document.querySelector('.row' + i);
+    const rows = document.querySelector('#row' + i);
 
     const box = document.createElement('div');
-    box.classList.add('box' + j);
+    box.setAttribute('id', 'box' + j);
+    box.classList.add('xDimension');
     box.textContent = '';
     
     rows.appendChild(box);
