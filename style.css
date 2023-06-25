@@ -19,17 +19,12 @@
 
 .grid {
     display: flex;
+    flex-direction: column;
     height: 512px;
     width: 512px;
     justify-content: center;
     align-items: center;
     margin-bottom: 12px; 
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
 }
 
 .xDimension {
