@@ -1,8 +1,8 @@
 
-function createGrid () {
-    for (let i = 0; i < 16; i++) {
+function createGrid (height, width) {
+    for (let i = 0; i < height; i++) {
         createRows(i);
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < width; j++) {
             createColumns(i, j);
         }
     }
@@ -31,4 +31,10 @@ function createColumns (i, j) {
     rows.appendChild(box);
 }
 
-createGrid();
+function add() {
+
+    let height = document.getElementById('height').value;
+    let width = document.getElementById('width').value;
+
+    createGrid(height, width);
+}
