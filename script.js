@@ -1,4 +1,18 @@
 
+function getValue() {
+    var e = document.getElementById("gridSize");
+
+    printGrid(e);
+}
+
+function printGrid(size) {
+
+    let height = size.value;
+    let width = size.value;
+
+    createGrid(height, width);
+}
+
 function createGrid (height, width) {
     for (let i = 0; i < height; i++) {
         createRows(i);
@@ -29,14 +43,4 @@ function createColumns (i, j) {
     box.textContent = '';
     
     rows.appendChild(box);
-}
-
-function printGrid(size) {
-
-    console.log(size.value);
-
-    let height = size.value;
-    let width = size.value;
-
-    createGrid(height, width);
 }

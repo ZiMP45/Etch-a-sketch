@@ -12,11 +12,12 @@
     <div class="game">
 
         <div class="controls">
-            <select name="gridSize" id="gridSize" onchange="printGrid(this)">
+            <select name="gridSize" id="gridSize">
                 <option value="select">Grid Size</option>
                 <option value="8">8 X 8</option>
                 <option value="16">16 X 16</option>
             </select>
+            <button class="submit" onclick="getValue()">Go</button>
         </div>
 
         <div class="grid"></div>
