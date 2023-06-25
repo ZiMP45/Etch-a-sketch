@@ -32,5 +32,3 @@ function createColumns (i, j) {
 }
 
 createGrid();
-
-// Continues to add boxes to first row instead of next row. Try classList.add('row' + j)?
