@@ -31,10 +31,12 @@ function createColumns (i, j) {
     rows.appendChild(box);
 }
 
-function add() {
+function printGrid(size) {
 
-    let height = document.getElementById('height').value;
-    let width = document.getElementById('width').value;
+    console.log(size.value);
+
+    let height = size.value;
+    let width = size.value;
 
     createGrid(height, width);
 }

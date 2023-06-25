@@ -32,11 +32,13 @@
 .xDimension {
     display: flex;
     width: 30px;
+    border: 1px solid black;
 }
 
 .yDimension {
     display: flex;
     height: 30px;
+    border: 1px solid black;
 }
 
 .controls {
