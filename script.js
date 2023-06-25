@@ -1,7 +1,7 @@
+createGrid(16, 16);
 
 function getValue() {
     var e = document.getElementById("gridSize");
-
     printGrid(e);
 }
 
