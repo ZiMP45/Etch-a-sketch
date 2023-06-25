@@ -1,6 +1,5 @@
 
-function printGrid () {
-    for (let j = 0; j < 16; j++) {
+function createGrid () {
         const grid = document.querySelector('.grid')
 
         const row = document.createElement('div');
@@ -18,9 +17,8 @@ function printGrid () {
             
             rows.appendChild(box);
         }
-    }
-}
+} 
 
-printGrid();
+createGrid();
 
 // Continues to add boxes to first row instead of next row. Try classList.add('row' + j)?
