@@ -1,0 +1,15 @@
+- select grid element
+- create grid function that draws initial grid
+    - createElement('div')
+    - classList.add('box')
+    - grid.appendChild(div)
+- function to re-move all previously written nodes
+    - while (parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+- variables for input and their value
+- eventListener to take input, call remove function then print out new grid with correct size
+    - same as first grid printing just inside different area
+
+
+- call createGrid
