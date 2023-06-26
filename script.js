@@ -14,7 +14,15 @@ function createGrid (value) {
         black.addEventListener('click', function () {
             row.addEventListener('mouseover', function () {
                 row.classList.remove('red');
+                row.classList.remove('erase');
                 row.classList.add('black');
+            })
+        });
+
+        erase.addEventListener('click', function () {
+            row.addEventListener('mouseover', function () {
+                row.classList.remove('red');
+                row.classList.remove('black');
             })
         });
 
