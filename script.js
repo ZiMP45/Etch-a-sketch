@@ -24,5 +24,11 @@ button.addEventListener('click', myFunction = () => {
     deleteChild(grid);
     let a = document.getElementById('gridSize');
     let value = a.value;
-    createGrid(value);
+    // createGrid(value);
+
+    if (value == 'select') {
+        createGrid(16);
+    } else {
+        createGrid(value);
+    }
 })
