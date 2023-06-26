@@ -46,7 +46,11 @@ body {
     border: 1px solid #f7f7f7;
 }
 
-.hover {
+.red {
+    background-color: red;
+}
+
+.black {
     background-color: black;
 }
 
