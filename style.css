@@ -30,13 +30,14 @@ body {
     height: 512px;
     width: 512px;
     margin-bottom: 12px;
-    border: 2px solid black;
+    border: 10px solid black;
     background-color: white;
+    border-radius: 10px;
 }
 
-.box {
+/* .box {
     border: 1px solid grey;
-}
+} */
 
 .hover {
     background-color: black;
@@ -55,6 +56,7 @@ body {
     align-items: center;
     border: 2px solid black;
     background-color: white;
+    border-radius: 10px;
 }
 
 .sizeControl {
@@ -76,11 +78,24 @@ body {
 .controls #gridSize,
 .controls #submit,
 .controls #erase, 
-.controls #color,
+.controls #black,
 .controls #multicolor {
     width: 100px;
     height: 24px;
+    border: 1px solid darkgray;
+    background-color: white;
 }
+
+.controls #multicolor {
+    background-image: linear-gradient(to right, red 0%, yellow 30%, green 60%, blue 100%);
+    font-weight: bold;
+  }
+
+  .controls #black {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
 
 .controls .Width,
 .controls .Height {
