@@ -20,26 +20,21 @@
 }
 
 .grid {
-    display: flex;
-    flex-direction: column;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
     height: 512px;
     width: 512px;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 12px;
     border: 2px solid black;
 }
 
-.xDimension {
-    display: flex;
-    width: 30px;
-    border: 1px solid black;
+.box {
+    border: 1px solid grey;
 }
 
-.yDimension {
-    display: flex;
-    height: 30px;
-    border: 1px solid black;
+.hover {
+    background-color: black;
 }
 
 .controls {
