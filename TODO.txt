@@ -1,4 +1,0 @@
-Next steps:
-- reset grid each time new size is selected
-- on hover, change color of box
-- style page
