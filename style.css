@@ -3,6 +3,10 @@
 } */
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: darkgray;
 }
 
@@ -11,6 +15,8 @@ body {
     text-align: center;
     margin-bottom: 12px;
     padding: 12px;
+    border: 2px solid black;
+    width: 512px;
 }
 
 .game {
@@ -35,9 +41,9 @@ body {
     border-radius: 10px;
 }
 
-/* .box {
-    border: 1px solid grey;
-} */
+.box {
+    border: 1px solid #f7f7f7;
+}
 
 .hover {
     background-color: black;
