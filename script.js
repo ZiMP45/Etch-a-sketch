@@ -4,6 +4,7 @@ const multi = document.querySelector('#multicolor');
 const erase = document.querySelector('#erase');
 const gradient = document.querySelector('#gradient')
 const buttons = document.querySelectorAll('button');
+let increase = 0.1;
 
 function createGrid (value) {
     for (let i = 0; i < value*value; i++){     
@@ -49,13 +50,10 @@ function createGrid (value) {
                 row.removeAttribute('style');
                 row.classList.add('gradient');
 
-                let opacity = 0.1;
-            
-                if (opacity <= 0.9) {
-                    row.onmouseenter = () => {
-                        opacity += 0.1;
-                        row.style.opacity = opacity;
-                    }
+                if (increase <= 0.9) {
+                    row.style.remove('background-color');
+                    row.style.setProperty('background-color', `rgba (0, 0, 0, ${increase}`);
+                    increase += 0.1;   
                 }
             })
         });
