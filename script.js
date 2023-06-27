@@ -2,7 +2,7 @@ const grid = document.querySelector('.grid');
 const black = document.querySelector('#black');
 const multi = document.querySelector('#multicolor');
 const erase = document.querySelector('#erase');
-const gradient = document.querySelector('#gradient');
+const gradient = document.querySelector('#gradient')
 const buttons = document.querySelectorAll('button');
 
 function createGrid (value) {
