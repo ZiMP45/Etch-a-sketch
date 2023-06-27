@@ -50,11 +50,6 @@ function createGrid (value) {
                 row.removeAttribute('style');
                 row.classList.add('gradient');
 
-                if (increase <= 0.9) {
-                    row.style.remove('background-color');
-                    row.style.setProperty('background-color', `rgba (0, 0, 0, ${increase}`);
-                    increase += 0.1;   
-                }
             })
         });
 
