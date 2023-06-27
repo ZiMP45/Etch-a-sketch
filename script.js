@@ -16,6 +16,7 @@ function createGrid (value) {
         black.addEventListener('click', function () {
             row.addEventListener('mouseover', function () {
                 row.classList.remove('green');
+                row.classList.remove('multi');
                 row.classList.remove('erase');
                 row.classList.add('black');
             })
@@ -25,6 +26,8 @@ function createGrid (value) {
             row.addEventListener('mouseover', function () {
                 row.classList.remove('green');
                 row.classList.remove('black');
+                row.classList.remove('multi');
+                row.removeAttribute('style');
             })
         });
 
