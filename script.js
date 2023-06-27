@@ -17,7 +17,7 @@ function createGrid (value) {
             row.addEventListener('mouseover', function () {
                 row.classList.remove('green');
                 row.classList.remove('multi');
-                row.classList.remove('erase');
+                row.removeAttribute('style');
                 row.classList.add('black');
             })
         });
@@ -27,6 +27,7 @@ function createGrid (value) {
                 row.classList.remove('green');
                 row.classList.remove('black');
                 row.classList.remove('multi');
+                row.classList.remove('gradient');
                 row.removeAttribute('style');
             })
         });
@@ -37,6 +38,25 @@ function createGrid (value) {
                 row.classList.remove('black');
                 row.classList.add('multi');
                 row.style.backgroundColor = getRandomColor();
+            })
+        });
+
+        gradient.addEventListener('click', function () {
+            row.addEventListener('mouseover', function () {
+                row.classList.remove('green');
+                row.classList.remove('black');
+                row.classList.remove('multi');
+                row.removeAttribute('style');
+                row.classList.add('gradient');
+
+                let opacity = 0.1;
+            
+                if (opacity <= 0.9) {
+                    row.onmouseenter = () => {
+                        opacity += 0.1;
+                        row.style.opacity = opacity;
+                    }
+                }
             })
         });
 
