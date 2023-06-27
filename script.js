@@ -8,12 +8,12 @@ function createGrid (value) {
         const row = document.createElement('div');
         row.classList.add('box');
         row.addEventListener('mouseover', function () {
-            row.classList.add('red');
+            row.classList.add('green');
         });
 
         black.addEventListener('click', function () {
             row.addEventListener('mouseover', function () {
-                row.classList.remove('red');
+                row.classList.remove('green');
                 row.classList.remove('erase');
                 row.classList.add('black');
             })
@@ -21,14 +21,14 @@ function createGrid (value) {
 
         erase.addEventListener('click', function () {
             row.addEventListener('mouseover', function () {
-                row.classList.remove('red');
+                row.classList.remove('green');
                 row.classList.remove('black');
             })
         });
 
         multi.addEventListener('click', function () {
             row.addEventListener('mouseover', function () {
-                row.classList.remove('red');
+                row.classList.remove('green');
                 row.classList.remove('black');
                 row.classList.add('multi');
                 row.style.backgroundColor = getRandomColor();
