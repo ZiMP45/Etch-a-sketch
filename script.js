@@ -51,6 +51,17 @@ function createGrid (value) {
                 row.classList.add('gradient');
 
             })
+
+            let alphaValue = 0;
+            let rgbValue = `rgba(0, 0, 0, ${alphaValue})`;
+
+            row.addEventListener('mouseover', darkenBox);
+
+            function darkenBox(e) {
+                alphaValue += 0.1;
+                rgbValue= `rgba(0, 0, 0, ${alphaValue})`;
+                row.style.backgroundColor = rgbValue;
+            }
         });
 
         grid.append(row);
