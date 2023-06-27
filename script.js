@@ -2,6 +2,8 @@ const grid = document.querySelector('.grid');
 const black = document.querySelector('#black');
 const multi = document.querySelector('#multicolor');
 const erase = document.querySelector('#erase');
+const gradient = document.querySelector('#gradient');
+const buttons = document.querySelectorAll('button');
 
 function createGrid (value) {
     for (let i = 0; i < value*value; i++){     
@@ -70,3 +72,24 @@ function getRandomColor() {
     }
     return color;
 }
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+
+        button.onclick = transformButton();
+        setTimeout(resetButton, 150);
+
+        function transformButton() {
+            button.style.transform = "scale(0.97)";
+            button.style.transition = "transform 0.2 ease";
+            button.style.border = "2px solid #ffc600";
+            button.style.boxShadow = "0 0 3px 2.5px #ffc600";
+        }
+
+        function resetButton() {
+            button.style.transform = "scale(1.0)";
+            button.style.border = "1px solid darkgray";
+            button.style.boxShadow = "none";
+        }
+    })
+})
