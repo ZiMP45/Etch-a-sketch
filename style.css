@@ -58,6 +58,10 @@ body {
     background-color: none;
 }
 
+/* .multi {
+    background-color: black;
+} */
+
 .controls {
     display: flex;
     flex-direction: column;

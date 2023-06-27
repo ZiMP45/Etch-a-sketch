@@ -26,6 +26,15 @@ function createGrid (value) {
             })
         });
 
+        multi.addEventListener('click', function () {
+            row.addEventListener('mouseover', function () {
+                row.classList.remove('red');
+                row.classList.remove('black');
+                row.classList.add('multi');
+                row.style.backgroundColor = getRandomColor();
+            })
+        });
+
         grid.append(row);
         grid.style.setProperty('grid-template-columns', `repeat(${value}, 2fr)`);
         grid.style.setProperty('grid-template-rows', `repeat(${value}, 2fr)`);
@@ -52,3 +61,12 @@ button.addEventListener('click', myFunction = () => {
         createGrid(value);
     }
 })
+
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
